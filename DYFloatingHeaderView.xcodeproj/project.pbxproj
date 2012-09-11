@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B9A92B8B25CF501DE83EF60 /* DYFloatingHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9A99853B426A6EBA7D042B /* DYFloatingHeaderView.m */; };
+		5B9A94195801C86D8F31BCF5 /* SampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9A92687296067070EA345F /* SampleListViewController.m */; };
+		5B9A96C44052087B5557510A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9A9891549373D5330FC5E8 /* CoreGraphics.framework */; };
+		5B9A970529DE030E11848C7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9A97A2A8CB8818E5EB15C0 /* main.m */; };
+		5B9A9887090F2496C2E14C6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9A9B7C7DB2EEB206AC1B90 /* UIKit.framework */; };
+		5B9A9AA3BADDDE59F2868826 /* SampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9A93965F2A5D3EC641E5FE /* SampleAppDelegate.m */; };
+		5B9A9D6E8BA26F7DABC61161 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B9A908C4574A33885535510 /* InfoPlist.strings */; };
+		5B9A9DADFDEC0B176AE59278 /* SampleHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9A9E8147278A8ADD154D0F /* SampleHomeViewController.m */; };
+		5B9A9FBA0B2185C06BB78A53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9A96B7A51DC9B548019E0E /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5B9A913D1311C55241D5C1CD /* SampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleAppDelegate.h; sourceTree = "<group>"; };
+		5B9A92687296067070EA345F /* SampleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleListViewController.m; sourceTree = "<group>"; };
+		5B9A92D5292DECB76004E0E5 /* DYFloatingHeaderView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "DYFloatingHeaderView-Info.plist"; sourceTree = "<group>"; };
+		5B9A9308564C118D9FCCF9FF /* DYFloatingHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYFloatingHeaderView.h; sourceTree = "<group>"; };
+		5B9A93965F2A5D3EC641E5FE /* SampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleAppDelegate.m; sourceTree = "<group>"; };
+		5B9A9588E321FE0D960D68B2 /* SampleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleListViewController.h; sourceTree = "<group>"; };
+		5B9A96B7A51DC9B548019E0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5B9A973414DAD816392BC481 /* DYFloatingHeaderView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DYFloatingHeaderView-Prefix.pch"; sourceTree = "<group>"; };
+		5B9A97A2A8CB8818E5EB15C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5B9A988D7A562292295D1C16 /* DYFloatingHeaderView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYFloatingHeaderView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B9A9891549373D5330FC5E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5B9A98F48DDCADB193E65017 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5B9A99853B426A6EBA7D042B /* DYFloatingHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYFloatingHeaderView.m; sourceTree = "<group>"; };
+		5B9A9B7C7DB2EEB206AC1B90 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5B9A9E8147278A8ADD154D0F /* SampleHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleHomeViewController.m; sourceTree = "<group>"; };
+		5B9A9ED05898B782F2FCAB83 /* SampleHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleHomeViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B9A94D9DE8167E3B4905403 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B9A9887090F2496C2E14C6F /* UIKit.framework in Frameworks */,
+				5B9A9FBA0B2185C06BB78A53 /* Foundation.framework in Frameworks */,
+				5B9A96C44052087B5557510A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B9A93CD656E22287DDF4527 /* DYFloatingHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				5B9A9E8147278A8ADD154D0F /* SampleHomeViewController.m */,
+				5B9A9ED05898B782F2FCAB83 /* SampleHomeViewController.h */,
+				5B9A92687296067070EA345F /* SampleListViewController.m */,
+				5B9A9588E321FE0D960D68B2 /* SampleListViewController.h */,
+				5B9A93965F2A5D3EC641E5FE /* SampleAppDelegate.m */,
+				5B9A913D1311C55241D5C1CD /* SampleAppDelegate.h */,
+				5B9A9A67CC6A0CDC8F0A4B00 /* Supporting Files */,
+				5B9A97D432F1E6C67F21AD7F /* DYFloatingHeaderView */,
+			);
+			path = DYFloatingHeaderView;
+			sourceTree = "<group>";
+		};
+		5B9A946332EE178DEB381298 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B9A988D7A562292295D1C16 /* DYFloatingHeaderView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B9A974705662212AC057543 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B9A9891549373D5330FC5E8 /* CoreGraphics.framework */,
+				5B9A96B7A51DC9B548019E0E /* Foundation.framework */,
+				5B9A9B7C7DB2EEB206AC1B90 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B9A97D432F1E6C67F21AD7F /* DYFloatingHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				5B9A99853B426A6EBA7D042B /* DYFloatingHeaderView.m */,
+				5B9A9308564C118D9FCCF9FF /* DYFloatingHeaderView.h */,
+			);
+			path = DYFloatingHeaderView;
+			sourceTree = "<group>";
+		};
+		5B9A99F91E7A6B7B44CF0373 = {
+			isa = PBXGroup;
+			children = (
+				5B9A946332EE178DEB381298 /* Products */,
+				5B9A974705662212AC057543 /* Frameworks */,
+				5B9A93CD656E22287DDF4527 /* DYFloatingHeaderView */,
+			);
+			sourceTree = "<group>";
+		};
+		5B9A9A67CC6A0CDC8F0A4B00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B9A973414DAD816392BC481 /* DYFloatingHeaderView-Prefix.pch */,
+				5B9A97A2A8CB8818E5EB15C0 /* main.m */,
+				5B9A908C4574A33885535510 /* InfoPlist.strings */,
+				5B9A92D5292DECB76004E0E5 /* DYFloatingHeaderView-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B9A9EF3D6E1C1AC2F3C76A7 /* DYFloatingHeaderView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B9A900E0152E5025CEE8F9A /* Build configuration list for PBXNativeTarget "DYFloatingHeaderView" */;
+			buildPhases = (
+				5B9A9F9D284562C95AFC794E /* Sources */,
+				5B9A94D9DE8167E3B4905403 /* Frameworks */,
+				5B9A9C45DE046834C9AB5D21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DYFloatingHeaderView;
+			productName = DYFloatingHeaderView;
+			productReference = 5B9A988D7A562292295D1C16 /* DYFloatingHeaderView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B9A91FA7D604ED6A59FDB67 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 5B9A979AAAF6D500F49156D4 /* Build configuration list for PBXProject "DYFloatingHeaderView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5B9A99F91E7A6B7B44CF0373;
+			productRefGroup = 5B9A946332EE178DEB381298 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B9A9EF3D6E1C1AC2F3C76A7 /* DYFloatingHeaderView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B9A9C45DE046834C9AB5D21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B9A9D6E8BA26F7DABC61161 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B9A9F9D284562C95AFC794E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B9A970529DE030E11848C7D /* main.m in Sources */,
+				5B9A9AA3BADDDE59F2868826 /* SampleAppDelegate.m in Sources */,
+				5B9A94195801C86D8F31BCF5 /* SampleListViewController.m in Sources */,
+				5B9A92B8B25CF501DE83EF60 /* DYFloatingHeaderView.m in Sources */,
+				5B9A9DADFDEC0B176AE59278 /* SampleHomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5B9A908C4574A33885535510 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B9A98F48DDCADB193E65017 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B9A931296707D13930F0EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B9A94D31910DCF5BF0BC49D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DYFloatingHeaderView/DYFloatingHeaderView-Prefix.pch";
+				INFOPLIST_FILE = "DYFloatingHeaderView/DYFloatingHeaderView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5B9A9849F8A65A77EBB9A83D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5B9A9C26CF0FCA3AA8EADA35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DYFloatingHeaderView/DYFloatingHeaderView-Prefix.pch";
+				INFOPLIST_FILE = "DYFloatingHeaderView/DYFloatingHeaderView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B9A900E0152E5025CEE8F9A /* Build configuration list for PBXNativeTarget "DYFloatingHeaderView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B9A94D31910DCF5BF0BC49D /* Release */,
+				5B9A9C26CF0FCA3AA8EADA35 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5B9A979AAAF6D500F49156D4 /* Build configuration list for PBXProject "DYFloatingHeaderView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B9A931296707D13930F0EFA /* Release */,
+				5B9A9849F8A65A77EBB9A83D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B9A91FA7D604ED6A59FDB67 /* Project object */;
+}
