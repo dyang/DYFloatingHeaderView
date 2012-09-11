@@ -5,4 +5,6 @@ A custom iOS control that is inspired by the floating header control used in Fac
 
 You can find a tutorial of DYFloatingHeaderView on my blog: http://iappexperience.com/post/23227218867/dyrateview-a-simple-yet-powerful-rating-control-for.  
 
-<iframe width="420" height="315" src="http://www.youtube.com/embed/A_hfHez4rOY" frameborder="0" allowfullscreen></iframe>
+![image](http://cl.ly/image/3l3o1F102F23/DYFloatingHeaderView1.png)
+
+![image](http://cl.ly/image/1G180H2p1L1k/DYFloatingHeaderView2.png)
