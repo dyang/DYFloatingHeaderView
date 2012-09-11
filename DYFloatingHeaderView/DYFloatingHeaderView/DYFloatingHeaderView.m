@@ -53,7 +53,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.backgroundColor = [UIColor lightGrayColor];
+        self.backgroundColor = [UIColor colorWithRed:235.0/255.0 green:238.0/255.0 blue:245.0/255.0 alpha:0.8];
         self.height = frame.size.height;
         self.lastScrollPosition = -self.height;
 
