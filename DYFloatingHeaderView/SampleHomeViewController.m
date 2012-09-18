@@ -24,16 +24,15 @@
 {
     [super viewDidLoad];
 	
-	// Table view
+	// Floating header
+    DYFloatingHeaderView *floatingHeader = [[DYFloatingHeaderView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, [DYFloatingHeaderView height])];
+    [self.view addSubview:floatingHeader];
+
+    // Table view
     self.listViewController = [[SampleListViewController alloc] init];
     self.listViewController.view.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
-    [self.view addSubview:self.listViewController.view];
-
-    // Floating header
-    DYFloatingHeaderView *floatingHeader =
-            [[DYFloatingHeaderView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, [DYFloatingHeaderView height])
-                                             scrollView:(UIScrollView *) self.listViewController.view];
-    [self.view addSubview:floatingHeader];
+    self.listViewController.headerView = floatingHeader;
+    [self.view insertSubview:self.listViewController.view belowSubview:floatingHeader];
 }
 
 - (void)viewDidUnload

@@ -7,8 +7,11 @@
 //
 
 #import "SampleListViewController.h"
+#import "DYFloatingHeaderView.h"
 
 @implementation SampleListViewController
+
+@synthesize headerView = _headerView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -16,6 +19,11 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)setHeaderView:(DYFloatingHeaderView *)headerView {
+    _headerView = headerView;
+    [_headerView updateScrollViewInsets:(UIScrollView *) self.view];
 }
 
 #pragma mark - Table view data source
@@ -39,6 +47,24 @@
     }
     cell.textLabel.text = [NSString stringWithFormat:@"Cell %d", indexPath.row];
     return cell;
+}
+
+#pragma mark - UIScrollViewDelegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    [self.headerView scrollViewDidScroll:scrollView];
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    [self.headerView scrollViewWillBeginDragging:scrollView];
+}
+
+- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {
+    [self.headerView scrollViewWillBeginDecelerating:scrollView];
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    [self.headerView scrollViewDidEndDecelerating:scrollView];
 }
 
 @end

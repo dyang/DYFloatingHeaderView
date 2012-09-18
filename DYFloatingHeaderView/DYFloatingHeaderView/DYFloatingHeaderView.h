@@ -31,9 +31,13 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-@interface DYFloatingHeaderView : UIView <UIScrollViewDelegate>
+@interface DYFloatingHeaderView : UIView
 
-- (id)initWithFrame:(CGRect)frame scrollView:(UIScrollView *)scrollView;
+- (void)updateScrollViewInsets:(UIScrollView *)scrollView;
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView;
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView;
+- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView;
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView;
 
 + (float)height;
 

@@ -49,31 +49,32 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 @synthesize showingHeader = _showingHeader;
 @synthesize lastScrollPosition = _lastScrollPosition;
 
-- (id)initWithFrame:(CGRect)frame scrollView:(UIScrollView *)scrollView {
+- (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
         self.backgroundColor = [UIColor colorWithRed:235.0/255.0 green:238.0/255.0 blue:245.0/255.0 alpha:0.8];
         self.height = frame.size.height;
         self.lastScrollPosition = -self.height;
-
-        // Update display so that the header view appears to be floating above the scrollView
-        UIEdgeInsets originalInset = scrollView.contentInset;
-        UIEdgeInsets updatedInset = UIEdgeInsetsMake([DYFloatingHeaderView height] + originalInset.top,
-                        originalInset.left, originalInset.bottom, originalInset.right);
-        scrollView.contentInset = updatedInset;
-        scrollView.scrollIndicatorInsets = updatedInset;
-        scrollView.delegate = self;
     }
     return self;
 }
+
+#pragma mark - Public interface
 
 // Customize height of this header here
 + (float)height {
     return 40;
 }
 
-#pragma mark - UIScrollViewDelegate
+// Update display so that the header view appears to be floating above the scrollView.
+- (void)updateScrollViewInsets:(UIScrollView *)scrollView {
+    UIEdgeInsets originalInset = scrollView.contentInset;
+    UIEdgeInsets updatedInset = UIEdgeInsetsMake([DYFloatingHeaderView height] + originalInset.top,
+            originalInset.left, originalInset.bottom, originalInset.right);
+    scrollView.contentInset = updatedInset;
+    scrollView.scrollIndicatorInsets = updatedInset;
+}
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     // Move header along with its associated scrollView until header goes off screen
