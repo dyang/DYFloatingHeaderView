@@ -36,6 +36,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 - (void)updateScrollViewInsets:(UIScrollView *)scrollView;
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView;
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView;
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate;
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView;
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView;
 
