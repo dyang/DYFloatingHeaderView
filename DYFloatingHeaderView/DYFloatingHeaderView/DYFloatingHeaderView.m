@@ -55,11 +55,19 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.backgroundColor = [UIColor colorWithRed:235.0/255.0 green:238.0/255.0 blue:245.0/255.0 alpha:0.8];
-        self.height = frame.size.height;
-        self.lastScrollPosition = -self.height;
+        self.backgroundColor = [UIColor colorWithRed:235.0/255.0 green:238.0/255.0 blue:245.0/255.0 alpha:0.9];
+        [self initialize];
     }
     return self;
+}
+
+- (void)awakeFromNib {
+    [self initialize];
+}
+
+- (void)initialize {
+    self.height = self.frame.size.height;
+    self.lastScrollPosition = -self.height;
 }
 
 #pragma mark - Public interface
