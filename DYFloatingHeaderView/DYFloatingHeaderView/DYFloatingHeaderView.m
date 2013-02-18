@@ -43,7 +43,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 @end
 
-@implementation DYFloatingHeaderView
+@implementation DYFloatingHeaderView {
+    BOOL _isBeingDragged;
+}
 
 @synthesize height = _height;
 @synthesize showingHeader = _showingHeader;
@@ -79,7 +81,12 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     // Move header along with its associated scrollView until header goes off screen
     CGFloat scrollViewOffset = scrollView.contentOffset.y - self.lastScrollPosition;
-    if (scrollViewOffset > 0 && self.frame.origin.y > -self.height) {
+    if (scrollView.contentOffset.y <= 0.0 && CGRectGetMaxY(self.frame) != self.frame.size.height && !_isBeingDragged) {
+        //Or if we are at the very top (header should always be visible)
+        CGFloat yOffset = (scrollView.contentOffset.y > -self.frame.size.height)?-(scrollView.contentOffset.y + self.frame.size.height):0.0;
+        self.frame = CGRectMake(0, yOffset, self.frame.size.width, self.frame.size.height);
+    } else if (scrollViewOffset > 0 && self.frame.origin.y > -self.height) {
+        _isBeingDragged = YES;
         self.frame = CGRectMake(0, -scrollViewOffset, self.frame.size.width, self.frame.size.height);
     }
 }
@@ -87,6 +94,16 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     // Keep a note of the last y position. This will be used as a basis for showing/hiding/moving the header
     self.lastScrollPosition = scrollView.contentOffset.y;
+    _isBeingDragged = NO;
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    _isBeingDragged = NO;
+    //We want to animate the header to full visibility if the user pulled it and stopped half way and it is not decelerating
+    // Detect if the scrollView is moving down (finger moves up) and if the header is still visible
+    if (!decelerate && scrollView.contentOffset.y > self.lastScrollPosition && CGRectGetMaxY(self.frame) > 0.0 && !self.showingHeader) {
+        [self showHeaderWithAnimation];
+    }
 }
 
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {

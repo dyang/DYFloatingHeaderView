@@ -59,6 +59,10 @@
     [self.headerView scrollViewWillBeginDragging:scrollView];
 }
 
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    [self.headerView scrollViewDidEndDragging:scrollView willDecelerate:decelerate];
+}
+
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {
     [self.headerView scrollViewWillBeginDecelerating:scrollView];
 }
